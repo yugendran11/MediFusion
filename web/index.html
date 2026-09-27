@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CareSync Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🏥 CareSync Hospital</h1>
+        <p>Smart Hospital Management System</p>
+    </div>
+
+    <div class="nav">
+
+    <button type="button" onclick="showMessage('Dashboard selected')">
+        Dashboard
+    </button>
+
+    <button type="button" onclick="showPatients()">
+        Patients
+    </button>
+
+    <button type="button" onclick="bookAppointment()">
+        Book Appointment
+    </button>
+
+    <button type="button" onclick="viewAppointments()">
+        View Appointments
+    </button>
+
+    <button type="button" onclick="cancelAppointment()">
+        Cancel Appointment
+    </button>
+
+    <button type="button" onclick="updateAppointmentStatus()">
+        Update Status
+    </button>
+
+    <button type="button" onclick="predictRisk()">
+        AI Risk Prediction
+    </button>
+
+</div>
+    <div class="container">
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>👤 Patients</h3>
+                <p>Manage patient records</p>
+            </div>
+
+            <div class="card">
+                <h3>📅 Appointments</h3>
+                <p>Manage doctor appointments</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 AI Assistant</h3>
+                <p>Patient risk prediction</p>
+            </div>
+
+        </div>
+
+        <div class="form-card">
+
+            <h2>➕ Add New Patient</h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label>Patient ID</label>
+                    <input type="text" id="patientId"
+                           placeholder="Enter Patient ID">
+                </div>
+
+                <div class="form-group">
+                    <label>Patient Name</label>
+                    <input type="text" id="patientName"
+                           placeholder="Enter Patient Name">
+                </div>
+
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" id="age"
+                           placeholder="Enter Age">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+
+                    <div class="gender-options">
+
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="Others">
+                            Others
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Contact Number</label>
+                    <input type="text" id="contact"
+                           placeholder="Enter Contact Number">
+                </div>
+
+                <div class="form-group">
+                    <label>Disease</label>
+                    <input type="text" id="disease"
+                           placeholder="Enter Disease">
+                </div>
+
+                <div class="form-group">
+                    <label>Admission Date</label>
+                    <input type="date" id="admissionDate">
+                </div>
+
+                <button type="button"
+                        class="save-button"
+                        onclick="savePatient()">
+                    Save Patient
+                </button>
+
+            </form>
+
+        </div>
+        <div id="patientList"></div>
+
+    </div>
+
+    
+
+    <script src="script.js?v=2"></script>
+
+  
+</body>
+</html>

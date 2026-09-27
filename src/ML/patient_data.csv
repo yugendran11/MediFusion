@@ -1,0 +1,11 @@
+age,temperature,heart_rate,fever,cough,fatigue,breathing_difficulty,risk
+25,36.5,72,0,0,0,0,LOW
+32,37.2,78,1,1,0,0,LOW
+45,38.5,95,1,1,1,0,MEDIUM
+52,39.1,105,1,1,1,1,HIGH
+61,39.5,110,1,1,1,1,HIGH
+28,37.8,85,1,1,0,0,LOW
+48,38.8,98,1,1,1,0,MEDIUM
+67,39.2,115,1,1,1,1,HIGH
+35,36.8,75,0,1,0,0,LOW
+55,38.7,100,1,1,1,0,MEDIUM
